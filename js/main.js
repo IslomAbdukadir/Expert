@@ -6,7 +6,6 @@ $(".desc__form").hide()
 $(".desc__span").hover(function () {
     // over
     $(".desc__form").show()
-    span.style.margin = "100px"
 }, function () {
     // out
     $(".desc__form").hide()
@@ -56,6 +55,30 @@ let buyBtn = document.querySelector(".buy__btn");
 let buyMenu = document.querySelector(".buy");
 let body = document.querySelector("body");
 let contactBtn = document.querySelector(".contact__button");
+
+// 
+
+let menu = document.querySelector(".header__menu");
+let list = document.querySelector(".header__list");
+
+menu.addEventListener("click", function () {
+    menu.style.display = "none";
+    list.style.display = "flex";
+    list.style.flexDirection = "column";
+    list.style.justifyContent = "center";
+    list.style.width = "100%";
+    list.style.height = "100%";
+    list.style.position = "absolute";
+    body.style.overflow = "hidden";
+    list.style.zIndex = "998";
+    list.style.top = "50%";
+    list.style.left = "50%";
+    list.style.transform = "translate(-50%,-50%)";
+    list.style.rowGap = "15px";
+    list.style.rowGap = "15px";     
+})
+
+// 
 
 contactBtn.addEventListener('click', function () {
     contactBtn.style.background = "green";
