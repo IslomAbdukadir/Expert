@@ -57,13 +57,12 @@ let buyMenu = document.querySelector(".buy");
 let body = document.querySelector("body");
 let contactBtn = document.querySelector(".contact__button");
 
-buyBtn.addEventListener('click', function () {
-    buyMenu.style.display = "flex";
-    body.style.overflow = "hidden";
-});
-
 contactBtn.addEventListener('click', function () {
     contactBtn.style.background = "green";
     contactBtn.style.transition = ".4s";
 })
 
+buyBtn.addEventListener('click', function () {
+    buyMenu.style.display = "flex";
+    body.style.overflow = "hidden";
+});
