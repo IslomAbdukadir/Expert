@@ -45,8 +45,6 @@ a {
 .main__header {
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    background: url(../img/headerBack.png) no-repeat center center / cover;
 }
 
 .header__nav {
@@ -451,24 +449,31 @@ footer {
     color: #222;
 }
 
+.shop .container {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    row-gap: 30px;
+    column-gap: 50px;
+}
+
 .shop__cards {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
+    flex-flow: wrap;
+    justify-content: none;
+    column-gap: 50px;
 }
 
 .shop__card-box {
-    max-width: 370px;
+    max-width: 280px;
     width: 100%;
-    min-height: 487px;
+    min-height: 300px;
     background: #f2f2f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 105px;
+    text-align: center;
+    padding: 0 80px;
     margin-bottom: 10px;
     position: relative;
+    border-radius: 15px;
 }
 
 .shop__name {
@@ -522,7 +527,8 @@ footer {
 
 .desc__boxes {
     display: flex;
-    column-gap: 30px;
+    row-gap: 30px;
+    flex-direction: column;
 }
 
 .desc__box {
